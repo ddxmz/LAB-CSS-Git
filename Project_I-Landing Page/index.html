@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Portfolio-Website</title>
     <link rel="stylesheet" href="style.css">
     <!-- link this file to another file by link -->
     <script src="https://kit.fontawesome.com/a10b6f4a52.js" crossorigin="anonymous"></script>
@@ -12,48 +12,34 @@
 <body>
 <div id="header">
     <div class="container">
-        
-        <nav class="nav">
-            <div class="main-nav">
-                <img src="images/LastOneLogo.png " class="logo">
+    
+        <nav>
+            <a href="index.html" class="logo-container">
+                <img src="img/Logo.png" alt="logo" class="logo">
+            </a>
+            
+
             <ul class="link", id="sidemenu">
-                
                 <li><a href="#header">Home</a></li>
-                <li><a href="#keyboard">Keyboards</a></li>
-                <li><a href="#shop">Shop</a></li>
-                <li><a href="#Support">Support</a></li>
-
-                <nav class="sub-nav">
-                    
-                    <button a  href="#" class="buy"><i class="fas fa-shopping-cart"></i>Add to cart</a>
-                </nav>
-
-              
+                <li><a href="#News">latest News</a></li>
+                <li><a href="#Agents">Agents</a></li>
+                <li><a href="#Maps">Maps</a></li>
+                
                 
                 
             </ul>
-            
-
-            </div>
-
            
-
-
-
         </nav>
- 
-       
-
-        
-
-
-
-
 
         <div class="header-text">
-        <h1>Hi, I'm <span>Dream</span>
-            <br> Pariyakorn Kanlayavinai <br>from Thailand</h1>
-        <p>undergraduate student</p>
+        <h1> <span>Valorant</span>
+            <br><br> is an online multiplayer computer game,
+             <br>produced by Riot Games. It is a first-person shooter game, 
+             <br>consisting of two teams of five, 
+             <br>where one team attacks and the other defends. 
+             <br>Players control characters known as ‘agents’,
+             <br> who all have different abilities to use during gameplay. </h1>
+        
         </div>
     </div>
 </div>
@@ -62,18 +48,26 @@
 <div class="container">
  <div class="row">
     <div class="about-col-1">
-        <img src="images/dreampic13.jpg" />
+        <div class="video-overlay">
+
+            <video controls>
+                <source src="ValoWP.mp4" type="video/mp4" class="video">
+            </video>
+
+        </div>
+        
     </div>
     
     <div class="about-col-2">
-        <h1 class="subtitle">About Me</h1>
-        <p>Hello! I'm Dream Pariyakorn Kanlayavinai, an undergraduate student from Thailand
-            <br>, currently immersed in the world of Information Technology at ITD, KMUTNB.
-            <br> My journey in IT has been nothing short of fascinating. From delving into programming languages 
-            <br>to exploring the latest advancements in technology.
-             <br>I am passionate about creating solutions that make a positive impact on the world.
-            <br>Aside from my academic pursuits, I have a unique skill as a Tarot card reader. 
-            <br>I believe that technology and mysticism can coexist, and my diverse interests shape a well-rounded perspective.</p>
+        <h1 class="subtitle">Latest News</h1>
+        
+        <p>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Quidem cum excepturi magni ipsum 
+            saepe vero minima provident deserunt repellendus, odio inventore
+             perferendis mollitia consequatur adipisci magnam placeat ea ducimus
+              recusandae.
+            
+        </p>
 
         <div class="tabtitle">
             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
