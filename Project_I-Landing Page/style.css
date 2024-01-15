@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Valorant";
   src: url("ValorantFont.ttf");
+  
 }
 
 * {
@@ -9,6 +10,7 @@
   font-family: "Valorant";
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -17,6 +19,23 @@ body {
   background: #080808;
   color: #fff;
 }
+
+#hero-news {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.hero-news {
+  
+}
+
+#hero {
+
+}
+
+#agent {
+}
+
 #header {
   width: 100%;
   height: 110vh;
@@ -25,6 +44,7 @@ body {
   background-size: cover;
   background-position: center;
 }
+
 .container {
   padding: 10px 10%;
 }
@@ -43,13 +63,17 @@ nav {
 .logo {
   width: 45px;
   margin-right: 20px;
-  filter: grayscale(100%); /* Initial grayscale effect */
-  transition: filter 0.5s, margin-right 0.5s; /* Smooth transition for filter and margin-right */
+  filter: grayscale(100%);
+  /* Initial grayscale effect */
+  transition: filter 0.5s, margin-right 0.5s;
+  /* Smooth transition for filter and margin-right */
 }
 
 .logo:hover {
-  filter: none; /* Remove grayscale effect on hover */
-  margin-right: 25px; /* Adjust the margin on hover if desired */
+  filter: none;
+  /* Remove grayscale effect on hover */
+  margin-right: 25px;
+  /* Adjust the margin on hover if desired */
   cursor: pointer;
 }
 
@@ -65,6 +89,7 @@ nav ul li a {
   font-size: 20px;
   position: relative;
 }
+
 nav ul li a::after {
   content: "";
   width: 0;
@@ -75,6 +100,7 @@ nav ul li a::after {
   bottom: -6px;
   transition: 0.5s;
 }
+
 nav ul li a:hover::after {
   width: 100%;
 }
@@ -84,11 +110,13 @@ nav ul li a:hover::after {
   font-size: 28px;
   color: white;
 }
+
 .header-text h1 {
   font-size: 25px;
   margin-top: 50px;
   color: white;
 }
+
 .header-text h1 span {
   color: rgb(255, 70, 80);
   font-size: 60px;
@@ -99,18 +127,21 @@ nav ul li a:hover::after {
   padding: 80px 0;
   color: white;
 }
+
 .row {
   display: flex;
   /* to get the text side by side (flex) */
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .about-col-1 {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
 }
+
 .about-col-2 {
   flex-basis: 60%;
   position: relative;
@@ -129,28 +160,30 @@ nav ul li a:hover::after {
   justify-content: center;
   color: white;
   text-align: center;
-  background: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Adjust the alpha value for the overlay darkness */
+  background: rgba(0,
+      0,
+      0,
+      0.5);
+  /* Adjust the alpha value for the overlay darkness */
 }
 
 .video-overlay h2,
 .video-overlay p {
   margin: 10px;
 }
+
 .subtitle {
   font-size: 60px;
   font-weight: 600;
   color: white;
   margin-bottom: 10px;
 }
+
 .tabtitle {
   display: flex;
   margin: 20px 0 40px;
 }
+
 .tab-links {
   margin-right: 50px;
   font-size: 18px;
@@ -158,6 +191,7 @@ nav ul li a:hover::after {
   cursor: pointer;
   position: relative;
 }
+
 .tab-links::after {
   content: "";
   width: 0;
@@ -183,6 +217,7 @@ nav ul li a:hover::after {
   color: rgb(255, 70, 80);
   font-size: 15px;
 }
+
 .tab-contents {
   display: none;
 }
@@ -207,6 +242,7 @@ nav ul li a:hover::after {
 #services {
   padding: 30px 0;
 }
+
 .services-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -247,6 +283,7 @@ nav ul li a:hover::after {
   transform: translateY(-10px);
   /* translateY = translate to xyz, so this code will move little bit to the right */
 }
+
 .services-list p {
   font-size: 20px;
 }
@@ -313,6 +350,7 @@ nav ul li a:hover::after {
   border-radius: 50%;
   text-align: center;
 }
+
 .work:hover img {
   transform: scale(1.1);
 }
@@ -378,7 +416,8 @@ nav ul li a:hover::after {
 .btn2 {
   display: inline-block;
   margin: 50px auto;
-  padding: 10px 20px; /* Adjust the padding as needed */
+  padding: 10px 20px;
+  /* Adjust the padding as needed */
   border: 1px solid rgb(209, 153, 0);
   border-radius: 16px;
   text-decoration: none;
@@ -400,7 +439,8 @@ nav ul li a:hover::after {
 .btn2.btn4 {
   display: inline-block;
   margin: 50px auto;
-  padding: 10px 20px; /* Adjust the padding as needed */
+  padding: 10px 20px;
+  /* Adjust the padding as needed */
   border: 1px solid rgb(209, 153, 0);
   border-radius: 16px;
   text-decoration: none;
@@ -418,6 +458,7 @@ nav ul li a:hover::after {
 .contact-right form {
   width: 100%;
 }
+
 form input,
 form textarea {
   width: 100%;
@@ -430,6 +471,7 @@ form textarea {
   font-size: 18px;
   border-radius: 6px;
 }
+
 form .btn2.btn4 {
   padding: 14px 60px;
   font-size: 18px;
@@ -438,63 +480,117 @@ form .btn2.btn4 {
 }
 
 .head-hero {
-    position: relative;
-  }
+  position: relative;
+}
 
-  .video-container {
-    position: relative;
-    width: 100%;
-  }
+.video-container {
+  position: relative;
+  width: 100%;
+  margin-top: 85px;
+}
 
-  #video-container {
-        position: relative;
-        height: 80vh; /* 80% of the viewport height */
-        overflow: hidden;
-    }
+#video-container {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+}
 
-    .unique-video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+.unique-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-  .center-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff; /* Change the text color as needed */
-    font-weight: 700;
-    font-size: 40px;
-  }
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+}
 
-  .container-hero {
-    background-color: #000000; /* Set background color as needed */
-    padding: 10px; /* Add padding for spacing */
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000; /* Set a high z-index to ensure it stays above other elements */
-  }
+.container-hero {
+  background-color: #000000;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding-top: 20px ;
+  padding-bottom: 30px;
+}
 
-  .space-header-hero {
-    margin-left: 20px;
-  }
+.space-header-hero {
+  margin-left: 20px;
+}
 
-  #player {
-    pointer-events: none;
-  }
+#player {
+  pointer-events: none;
+}
 
-  #centerButton {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #ff4655;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    padding: 1.9rem 3rem;
-    text-align: center;
-  }
+.unique-video {
+  opacity: 0.4; /* Set the opacity value (0.0 to 1.0) */
+}
+
+
+/* animate on scoll or startup */
+.animate-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+
+.animate-up.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.head-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-container:hover .center-text h1 {
+  font-size: 2.1em;
+  /* Increase font size when hovering */
+}
+
+.video-container:hover .btn-hero {
+  transform: translateY(10px);
+  opacity: 1;
+}
+
+.center-text h1 {
+  transition: font-size 0.5s ease;
+}
+
+.btn-hero {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.line {
+  position: fixed;
+  top: 0;
+  left: 20%;
+  height: 100%;
+  width: 3px;
+  background-color: #000;
+  /* Change the color as needed */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  scroll-behavior: smooth;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+  font-size: 18px;
+}

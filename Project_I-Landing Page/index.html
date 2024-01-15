@@ -1,236 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio-Website</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/a10b6f4a52.js" crossorigin="anonymous"></script>
-  </head>
-  <style>
 
-  </style>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valorant-Landing-Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="button.css" />
+  <link rel="stylesheet" href="loader.css" />
+  <script src="https://kit.fontawesome.com/a10b6f4a52.js" crossorigin="anonymous"></script>
+</head>
 
-    <div>
-        <div class="container container-hero">
-          <nav class="space-header-hero">
-            <a href="index.html" class="logo-container">
-              <img src="img/Logo.png" alt="logo" class="logo" />
-            </a>
-            <ul class="link" , id="sidemenu">
-              <li><a href="#header">Home</a></li>
-              <li><a href="#News">latest News</a></li>
-              <li><a href="#Agents">Agents</a></li>
-              <li><a href="#Maps">Maps</a></li>
-            </ul>
-          </nav>
-        </div>
-    </div>
 
-    <div class="head-hero">
-      <div class="video-container">
-        <video id="myVideo" width="100%" height="1080" class="unique-video" autoplay loop muted controls>
-          <source src="video/ep8.mp4" type="video/mp4">
-      </video>
-        <div class="center-text">
-            <h1>VALORANT</h1>
-            <p></p>
-        </div>
-        <a href="https://authenticate.riotgames.com/">
-            <button class="centerButton" id="centerButton" onclick="playPause()">Play Free</button>
+<style>
+.shiny-text {
+  background: linear-gradient(to right, #C0C0C0, #FFFFFF, #C0C0C0);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+  border: none;
+  margin-bottom: 30px;
+  padding: 10px; /* Adjust as needed */
+  border-radius: 5px; /* Adjust as needed */
+  box-shadow: 0 0 10px rgba(192, 192, 192, 0.5); /* Adjust as needed */
+}
+
+</style>
+
+
+<body>
+
+  <div id="hero">
+    <div class="container container-hero">
+      <nav class="space-header-hero" id="navbar">
+        <a href="index.html" class="logo-container">
+          <img src="img/Logo.png" alt="logo" class="logo" />
         </a>
+        <ul class="link" , id="sidemenu">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#hero-news">latest News</a></li>
+          <li><a href="#agent">Agents</a></li>
+          <li><a href="#Maps">Maps</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="head-hero animate-up">
+    <div class="line"></div>
+    <div class="video-container">
+      <div>
+        <video id="myVideo" width="100%" height="100%" class="unique-video" autoplay loop muted controls>
+          <source src="video/ep8.mp4" type="video/mp4">
+        </video>
       </div>
-    </div>
-    <div>
-
-    <div id="portfolio">
-      <div class="container">
-                <h1 class="subtitle">Latest News</h1>
-
-                    <div class="work-list">
-                        <div class="work">
-                            <img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blteb9f6c0679d1db4e/659715d12d2612f223e75ceb/EP8_Act_1_Outlaw-Deep-Dive-Article_1920x1080.jpg?auto=webp&disable=upscale&width=390" />
-                            <div class="layer">
-                                <h3>Tarot Readings</h3>
-                                <div>
-                                    <p>
-                                        Which can empower individuals to make informed decisions.
-                                        <br/>By offering a different perspective on their
-                                        circumstances.
-                                    </p>
-                                    <a href="https://playvalorant.com/th-th/news/game-updates/a-new-addition-to-the-arsenal-outlaw-insights/">
-                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="work">
-                            <img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt0750736bd8247a67/659894f8254eff4d79747d6c/8-1-Kickoff-Textless-Thumb-V2.jpg?auto=webp&disable=upscale&width=390" />
-                            <div class="layer">
-                                <h3>Tarot Readings</h3>
-                                <div>
-                                    <p>
-                                        Which can empower individuals to make informed decisions.
-                                        <br />By offering a different perspective on their
-                                        circumstances.
-                                    </p>
-                                    <a href="https://playvalorant.com/th-th/news/game-updates/a-new-addition-to-the-arsenal-outlaw-insights/">
-                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="work">
-                            <img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt50b907680c36b068/6595f28fbe5d26aff965a0f1/EP8_Act_1_Patch-Notes-8_0_1920x1080.jpg?auto=webp&disable=upscale&width=390" />
-                            <div class="layer">
-                                <h3>Tarot Readings</h3>
-                                <div>
-                                    <p>
-                                        Which can empower individuals to make informed decisions.
-                                        <br/>By offering a different perspective on their
-                                        circumstances.
-                                    </p>
-                                    <a href="https://playvalorant.com/th-th/news/game-updates/a-new-addition-to-the-arsenal-outlaw-insights/">
-                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="center-container">
+        <div class="center-text">
+          <h1 class="shiny-text">VALORANT</h1>
         </div>
-    </div>
-    
-
-    <div id="header">
-      <div class="container">
-        <div class="header-text">
-          <h1>
-            <span>Valorant</span> <br /><br />
-            is an online multiplayer computer game, <br />produced by Riot
-            Games. It is a first-person shooter game, <br />consisting of two
-            teams of five, <br />where one team attacks and the other defends.
-            <br />Players control characters known as ‘agents’, <br />
-            who all have different abilities to use during gameplay.
-          </h1>
+        <div class="center-button">
+          <button class="btn-hero" onclick="playPause()">
+            <span class="btn-hero__inner">
+              <span class="btn-hero__slide"></span>
+              <span class="btn-hero__content">PLAY FREE</span>
+            </span>
+          </button>
         </div>
       </div>
     </div>
+  </div>
 
 
-    <!-- --------contact---------- -->
-    <div style="margin-bottom: 40px;"></div>
-    <div id="contact">
+  <div class="animate-up">
+    <div id="hero-news">
       <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="subtitle">Contact Me</h1>
-            <p>
-              <i class="fa-solid fa-paper-plane"></i>pariyakorn.ch@gmail.com
-            </p>
-            <p><i class="fa-solid fa-phone"></i>(66+) 954868081</p>
-
-            <div class="social-icon">
-              <a href="https://www.facebook.com/pariyakorn.kanlayavinai"
-                ><i class="fa-brands fa-facebook"></i
-              ></a>
-              <a
-                href="https://instagram.com/d_dreaminn?igshid=MTNiYzNiMzkwZA%3D%3D&utm_source=qr"
-              >
-                <i class="fa-brands fa-square-instagram"></i
-              ></a>
-              <a href="https://line.me/ti/p/OzZ4C4pS9g"
-                ><i class="fa-brands fa-line"></i
-              ></a>
+        <h1 class="subtitle">Latest News</h1>
+        <div class="work-list">
+          <div class="work">
+            <img
+              src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blteb9f6c0679d1db4e/659715d12d2612f223e75ceb/EP8_Act_1_Outlaw-Deep-Dive-Article_1920x1080.jpg?auto=webp&disable=upscale&width=390" />
+            <div class="layer">
+              <h3>Tarot Readings</h3>
+              <div>
+                <p>
+                  Which can empower individuals to make informed decisions.
+                  <br />By offering a different perspective on their
+                  circumstances.
+                </p>
+                <a
+                  href="https://playvalorant.com/th-th/news/game-updates/a-new-addition-to-the-arsenal-outlaw-insights/">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
             </div>
-            <a href="images/Pariyakorn-cv.pdf" download class="btn2 btn3"
-              >Download CV</a
-            >
           </div>
-          <div class="contact-right">
-            <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" required />
-              <input
-                type="email"
-                name="Email"
-                placeholder="Your Email"
-                required
-              />
-              <textarea
-                name="Message"
-                rows="6"
-                placeholder="Your Message"
-                required
-              ></textarea>
-              <button type="submit" class="btn2 btn4">Submit</button>
-            </form>
-            <span id="msg"></span>
+
+          <div class="work">
+            <img
+              src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt0750736bd8247a67/659894f8254eff4d79747d6c/8-1-Kickoff-Textless-Thumb-V2.jpg?auto=webp&disable=upscale&width=390" />
+            <div class="layer">
+              <h3>Tarot Readings</h3>
+              <div>
+                <p>
+                  Which can empower individuals to make informed decisions.
+                  <br />By offering a different perspective on their
+                  circumstances.
+                </p>
+                <a
+                  href="https://playvalorant.com/th-th/news/game-updates/a-new-addition-to-the-arsenal-outlaw-insights/">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="work">
+            <img
+              src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt50b907680c36b068/6595f28fbe5d26aff965a0f1/EP8_Act_1_Patch-Notes-8_0_1920x1080.jpg?auto=webp&disable=upscale&width=390" />
+            <div class="layer">
+              <h3>Tarot Readings</h3>
+              <div>
+                <p>
+                  Which can empower individuals to make informed decisions.
+                  <br />By offering a different perspective on their
+                  circumstances.
+                </p>
+                <a
+                  href="https://playvalorant.com/th-th/news/game-updates/a-new-addition-to-the-arsenal-outlaw-insights/">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  </div>
 
-    <form name="submit-to-google-sheet"></form>
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycby9suZ0kDN1NLi9t87YFMqX18UCsh56i9BEvLGfGv8i97RIwNZpFeJM4MzlOVLIePM4/exec";
-      const form = document.forms["submit-to-google-sheet"];
-      const msg = document.getElementById("msg");
+  <div id="header">
+    <div class="container animate-up">
+      <div class="header-text">
+        <h1>
+          <span>Valorant</span> <br /><br />
+          is an online multiplayer computer game, <br />produced by Riot
+          Games. It is a first-person shooter game, <br />consisting of two
+          teams of five, <br />where one team attacks and the other defends.
+          <br />Players control characters known as ‘agents’, <br />
+          who all have different abilities to use during gameplay.
+        </h1>
+      </div>
+    </div>
+  </div>
 
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            msg.innerHTML = "Message sent successfully";
-            setTimeout(function () {
-              msg.innerHTML = " ";
-            }, 5000);
+  <style>
+    .slideshow-container {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+  
+    .slide {
+      display: flex;
+      align-items: center;
+      text-align: left;
+      padding: 20px;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative; /* Add relative positioning to the slide */
+      z-index: 2; /* Ensure slide content is above other elements */
+    }
+  
+    .slide img {
+      width: 500px;
+      height: auto;
+      border-radius: 8px;
+      margin-right: 20px;
+    }
+  
+    .name-agent-hero {
+      font-size: 30px;
+      font-weight: bold;
+      margin-top: 10px;
+      color: #000000;
+    }
+  
+    .skill-agent-hero {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+  
+    .slide-show {
+      padding-top: 30px;
+    }
+  
+    .agent-hero {
+      display: flex;
+      align-items: flex-start;
+    }
+  
+    .text-hero {
+      text-align: left;
+    }
+  
+    .title-hero {
+      font-size: 14px;
+    }
+  
+    .detail-hero {
+      font-size: 50px;
+    }
+  
+    .detail-hero-bio {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  
+    .space-hero {
+      margin-top: 20px;
+    }
+  
+    #agent {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+  
+    #agent video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      object-fit: cover;
+      z-index: 1; /* Place the video behind the slide content */
+    }
+  
+    .white-div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 20vh;
+      background-color: white;
+      z-index: 2; /* Place the white div above the video */
+    }
 
-            form.reset();
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
-    <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
+    .video-hero-opacity {
+      opacity: 0.5;
+    }
 
-      function opentab(tabname) {
-        for (var i = 0; i < tablinks.length; i++) {
-          tablinks[i].classList.remove("active-link");
-        }
-        for (var i = 0; i < tabcontents.length; i++) {
-          tabcontents[i].classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
+    .agent-hero{
+      color: #FFFFFF;
+    }
+
+    .agent-hero-text {
+      padding-top: 140px;
+      width: 60%;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  </style>
+  
+  <div id="agent">
+    <div class="white-div"></div>
+    <div class="video-hero-opacity">
+      <video autoplay loop muted playsinline poster="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltbded518020183769/5eb26f5389bac8148a8006cc/agent-background-generic.JPG">
+        <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt29d7c4f6bc077e9e/5eb26f54402b8b4d13a56656/agent-background-generic.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="slide-show">
+      <div class="slideshow-container">
+        <div class="slide">
+          <div class="agent-hero">
+            <div>
+              <div class="name-agent-hero">ISO</div>
+            </div>
+            <div>
+              <img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt34e30d5669e7309c/653add3080274d040a37d656/ISO_KeyArt_Final.png" alt="Image 1">
+            </div>
+            <div class="agent-hero-text">
+              <div class="skill-agent-hero">
+                <span class="title-hero">// ROLE</span>
+                <span class="detail-hero">DUELIST</span>
+              </div>
+              <div class="text-hero space-hero">
+                <span class="title-hero">// BIOGRAPHY</span><br>
+                <span class="detail-hero detail-hero-bio">
+                  Chinese fixer for hire, Iso falls into a flow state to dismantle the opposition.
+                  Reconfiguring ambient energy into bulletproof protection, he advances with focus towards his next duel to the death.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+  
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+  
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("slide");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
       }
-    </script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-          var video = document.getElementById('myVideo');
-    
-          video.currentTime = 252;
-    
-          video.removeAttribute('controls');
-    
-          video.addEventListener('play', function() {
-              video.removeAttribute('controls');
-          });
-    
-          video.addEventListener('pause', function() {
-              video.setAttribute('controls', 'controls');
-          });
-    
-          video.addEventListener('ended', function() {
-              video.setAttribute('controls', 'controls');
-          });
+      slides[slideIndex - 1].style.display = "block";
+    }
+  </script>
+
+  <!-- --------contact---------- -->
+  <div style="margin-bottom: 40px;"></div>
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="subtitle">Contact Me</h1>
+          <p>
+            <i class="fa-solid fa-paper-plane"></i>pariyakorn.ch@gmail.com
+          </p>
+          <p><i class="fa-solid fa-phone"></i>(66+) 954868081</p>
+
+          <div class="social-icon">
+            <a href="https://www.facebook.com/pariyakorn.kanlayavinai"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com/d_dreaminn?igshid=MTNiYzNiMzkwZA%3D%3D&utm_source=qr">
+              <i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://line.me/ti/p/OzZ4C4pS9g"><i class="fa-brands fa-line"></i></a>
+          </div>
+          <a href="images/Pariyakorn-cv.pdf" download class="btn2 btn3">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="email" name="Email" placeholder="Your Email" required />
+            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn2 btn4">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <form name="submit-to-google-sheet"></form>
+  <script>
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycby9suZ0kDN1NLi9t87YFMqX18UCsh56i9BEvLGfGv8i97RIwNZpFeJM4MzlOVLIePM4/exec";
+    const form = document.forms["submit-to-google-sheet"];
+    const msg = document.getElementById("msg");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then((response) => {
+          msg.innerHTML = "Message sent successfully";
+          setTimeout(function () {
+            msg.innerHTML = " ";
+          }, 5000);
+
+          form.reset();
+        })
+        .catch((error) => console.error("Error!", error.message));
+    });
+  </script>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (var i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active-link");
+      }
+      for (var i = 0; i < tabcontents.length; i++) {
+        tabcontents[i].classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var video = document.getElementById('myVideo');
+
+      video.currentTime = 262;
+
+      video.removeAttribute('controls');
+
+      video.addEventListener('play', function () {
+        video.removeAttribute('controls');
       });
-    </script>
-  </body>
+
+      video.addEventListener('pause', function () {
+        video.setAttribute('controls', 'controls');
+      });
+
+      video.addEventListener('ended', function () {
+        video.setAttribute('controls', 'controls');
+      });
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#navbar a").on('click', function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const animatedElements = document.querySelectorAll('.animate-up');
+      function checkScroll() {
+        animatedElements.forEach((element) => {
+          const elementTop = element.getBoundingClientRect().top;
+          const windowHeight = window.innerHeight;
+
+          if (elementTop < windowHeight * 0.8) {
+            element.classList.add('active');
+          }
+        });
+      }
+      window.addEventListener('scroll', checkScroll);
+      window.addEventListener('resize', checkScroll);
+      checkScroll();
+    });
+  </script>
+
+
+</body>
+
 </html>
