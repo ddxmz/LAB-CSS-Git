@@ -1,0 +1,47 @@
+.news-cards-container {
+  top: 10rem;
+}
+.latest-news {
+  font-size: 7rem;
+  top: 4rem;
+}
+
+#news-container {
+  height: 30rem;
+}
+.middle-heading .heading-text {
+  font-size: 8rem;
+  line-height: 7rem;
+}
+
+.left-text-container {
+  padding: 0 3rem 0 3rem;
+}
+
+.promotion-container {
+  padding-left: 0;
+}
+
+.your-agents {
+  top: 3rem;
+  left: 80vh;
+}
+
+.your-agent-heading {
+  font-size: 8vw;
+  color: white;
+  font-family: TUNGSTEN;
+  line-height: 1;
+  max-width: 35vw;
+  padding-bottom: 1rem;
+}
+
+.your-maps {
+  top: 26%;
+  left: 12%;
+  z-index: 2;
+}
+
+.vertical-abstract {
+  left: 5%;
+}

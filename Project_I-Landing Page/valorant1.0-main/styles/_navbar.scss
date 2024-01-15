@@ -1,0 +1,175 @@
+#navbar {
+  width: 100%;
+  background-color: $darkColor;
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+}
+
+.navbar-container {
+  width: 95%;
+  display: flex;
+  margin: auto;
+  color: white;
+  font-family: ff-mark;
+  min-height: 4rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.game-info {
+  padding-left: 1rem;
+  font-weight: 800;
+  font-size: 0.7rem;
+}
+
+.riot-logo-conatiner {
+  width: 50px;
+  position: relative;
+  .fa-caret-down {
+    position: absolute;
+    font-size: 0.6rem;
+    left: 50px;
+    margin-top: 1.6rem;
+  }
+}
+
+.fa-caret-down {
+  font-size: 0.6rem;
+  margin: 10px;
+}
+
+.riot-logo {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  transform: scale(0.3);
+  top: -50px;
+  left: -50px;
+  background: url(/assets/long-logo.png) 0 -2400px no-repeat;
+  //   transition: background-position .25s steps(15, end);
+  transition-property: background-position;
+  transition-duration: 0.25s;
+  transition-timing-function: steps(15);
+  transition-delay: 0s;
+
+  &:hover {
+    background-position: 0 0;
+  }
+}
+
+.valo-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  img {
+    width: 35px;
+    margin-left: 2rem;
+  }
+  div {
+    min-width: 120px;
+    padding-right: 1rem;
+  }
+}
+
+.right-nav-btns {
+  display: flex;
+}
+.main-navs {
+  font-weight: 800;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  height: 4rem;
+  font-size: 0.7rem;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: 3px solid $secondaryRed;
+  }
+}
+.globe-cover {
+  padding: 0.5rem;
+  background-color: rgb(39, 39, 39);
+  border-radius: 3rem;
+  cursor: pointer;
+}
+
+.fa-globe {
+  padding: 0.3rem;
+}
+.play-now-button {
+  font-weight: 800;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0rem 2rem;
+  background: $secondaryRed;
+  margin-left: 1rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.tablet-right-nav-btns {
+  display: flex;
+}
+
+.hambuger-icon {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  span {
+    display: inline-block;
+    width: 1.5rem;
+    height: 3px;
+    background-color: white;
+    margin: 3px;
+  }
+}
+
+.tablet-nav-items {
+  width: 100%;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  .logo-cover {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.hambuger-icon {
+  padding-left: 1rem;
+}
+
+.mobile-nav-valo-logo img {
+  width: 8rem;
+}
+
+@media only screen and (max-width: 1100px) {
+  .nav-items,
+  .right-nav-btns {
+    display: none;
+  }
+
+  .tablet-nav-items {
+    display: flex;
+  }
+}

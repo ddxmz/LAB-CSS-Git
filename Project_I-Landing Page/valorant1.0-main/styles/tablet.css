@@ -1,0 +1,194 @@
+#news-container {
+  overflow-x: scroll;
+  margin: 2rem;
+  height: 40rem;
+}
+
+#news-container::-webkit-scrollbar {
+  display: none;
+}
+
+.news-cards-container {
+  min-width: 110rem;
+}
+
+.news-card {
+  width: 100vw;
+}
+
+.main-bg-text p {
+  font-size: 14rem;
+}
+
+.double-dot-bottom {
+  display: none;
+}
+
+.abstract3 {
+  display: none;
+}
+
+.promotion-container {
+  padding-top: 5vh;
+  padding-bottom: 10vh;
+  margin: 0 3rem;
+  flex-direction: column;
+}
+.promotion-abstract {
+  display: none;
+}
+
+.left-text-container {
+  padding: 0;
+}
+
+.middle-heading-conatiner {
+  margin-top: 4rem;
+  margin-left: 3rem;
+}
+
+.middle-heading .heading-text {
+  font-size: 7rem;
+}
+
+.left-text-container div {
+  font-size: 1.3rem;
+}
+
+.left-text-container p {
+  font-size: 1rem;
+  width: 90%;
+}
+
+.left-text-container p:nth-child(3) {
+  font-size: 1rem;
+}
+
+.tri-design {
+  display: none;
+}
+
+.agent-bg-conatiner {
+  flex-direction: column;
+}
+
+.agent-video {
+  height: 100vh;
+  position: absolute;
+}
+
+#agent-bg {
+  height: 130vh;
+}
+.agent-bg-conatiner {
+  flex-direction: column;
+}
+
+.your-agents {
+  position: relative;
+  top: 5rem;
+  left: 3rem;
+}
+.your-agent-heading {
+  font-size: 6rem;
+  max-width: 100%;
+}
+
+.your-agents p:nth-child(3) {
+  padding: 0;
+}
+
+.your-agents p:nth-child(4) {
+  max-width: 30rem;
+}
+
+.agent-video {
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  position: absolute;
+  top: 20rem;
+}
+
+.agent-bg-conatiner {
+  background: url(../assets/bg-pattern.png);
+  background-repeat: no-repeat;
+  background-position-y: 150%;
+  background-position-x: 50%;
+  height: 100vh;
+  z-index: 0;
+}
+
+.agent-video video {
+  height: 100%;
+  width: 100%;
+}
+
+#your-maps {
+  margin-top: 30rem;
+  height: 70vh;
+}
+.map-section-container {
+  background-size: cover;
+  background-position-x: 70%;
+  background-position-y: 0px;
+  background-size: cover;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+}
+
+.white-map-gradient {
+  background: linear-gradient(90deg, white 5%, rgba(255, 255, 255, 0.089) 50%);
+}
+
+.your-maps {
+  top: -35%;
+  left: 3rem;
+  width: 100%;
+}
+
+.your-maps-heading {
+  font-size: 7rem;
+  max-width: 100%;
+}
+.vertical-abstract {
+  display: none;
+}
+
+#footer {
+  padding-top: 5rem;
+}
+
+.bottom-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+}
+
+.agent-btn-border {
+  z-index: 0;
+}
+
+.white-map-gradient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.bottom-btn-mobo {
+  position: absolute;
+  bottom: 5rem;
+}
+
+.hide-btn,
+.bottom-btn-pc {
+  display: none;
+}
+
+.bottom-btn-mobo {
+  display: flex;
+}

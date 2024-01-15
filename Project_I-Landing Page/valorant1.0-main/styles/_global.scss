@@ -1,0 +1,32 @@
+//global styleing removal****************
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+//impoted custom fonts****************************
+@font-face {
+  src: url(../fonts/FontFont_FF.Mark.Pro.Medium.otf);
+  font-family: "ff-mark";
+}
+@font-face {
+  src: url(../fonts/DINNextW1G.otf);
+  font-family: " DINNextW1G";
+}
+@font-face {
+  src: url(../fonts/TUNGSTEN-BOLD.OTF);
+  font-family: "TUNGSTEN";
+}
+@font-face {
+  src: url(../fonts/DINnext_lt.ttf);
+  font-family: "DINnext";
+}
+
+//global veriables*******************
+
+$darkColor: rgb(17, 17, 17);
+$secondaryRed: #ff4655;
+$main-font: DINNextW1G;
+$secondary-font: ff-mark;
+$heading-font: TUNGSTEN;
+$large-font: DINnext;
